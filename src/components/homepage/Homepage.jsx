@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const textVarients = {
 	initial: {
@@ -39,13 +40,19 @@ const Homepage = () => {
 		>
 			<h1 className="text-5xl text-center">Will you be my valentine?</h1>
 			<div className="flex flex-row buttons gap-2">
-				<motion.a
+				<Link
+					to="/thankyou"
+					className=" rounded-2xl bg-green-400 p-4 px-10 text-xl"
+				>
+					Yes
+				</Link>
+				{/* <motion.a
 					href="/thankyou"
 					className=" rounded-2xl bg-green-400 p-4 px-10 text-xl"
 					whileTap={{ scale: 1.05 }}
 				>
 					Yes
-				</motion.a>
+				</motion.a> */}
 				{/* <motion.button
 					className=" rounded-2xl bg-green-400 p-4 px-10 text-xl"
 					whileTap={{ scale: 1.05 }}
