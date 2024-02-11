@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Plan = ({ plan }) => {
 	const { img, desc, title, date, id } = plan;
@@ -21,12 +22,12 @@ const Plan = ({ plan }) => {
 			{id < 4 && <h1 className="text-4xl p-5">Keep Scrolling!</h1>}
 			{id == 4 && <h1 className="text-4xl p-5">More to come!</h1>}
 			{id == 4 && (
-				<a
-					href="/"
+				<Link
+					to="/"
 					className="p-10 bg-gradient-to-r from-rose-400 to-rose-500 text-xl rounded-full shadow-lg"
 				>
 					Home
-				</a>
+				</Link>
 			)}
 		</section>
 	);

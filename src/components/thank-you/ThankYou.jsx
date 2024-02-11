@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 const textVarients = {
 	initial: {
 		x: -500,
@@ -27,12 +28,18 @@ const ThankYou = () => {
 				<img src="./rizz.gif" className="m-auto rounded-2xl" />
 			</div>
 			<audio controls autoPlay src="./rizz.mp3" />
-			<a
+			<Link
+				to="/yes"
+				className="p-6 rounded-xl bg-gradient-to-r from-rose-400 to-rose-500 text-center text-xl shadow-lg"
+			>
+				Wait we're not done Click Here!
+			</Link>
+			{/* <a
 				className="p-6 rounded-xl bg-gradient-to-r from-rose-400 to-rose-500 text-center text-xl shadow-lg"
 				href="/yes"
 			>
 				Wait we're not done Click Here!
-			</a>
+			</a> */}
 		</motion.div>
 	);
 };
