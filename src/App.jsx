@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import Yes from "./components/yes/Yes";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ThankYou from "./components/thank-you/ThankYou";
+import Food from "./components/food/Food";
 
 const router = createBrowserRouter([
 	{
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
 	{
 		path: "/yes",
 		element: <Yes />,
+	},
+	{
+		path: "/food",
+		element: <Food />,
 	},
 ]);
 
