@@ -24,7 +24,7 @@ This project was built with:
 
 ## How to view
 
-To experience "Will You Be My Valentine?", simply visit: https://valentine-324s.onrender.com/ from any modern web browser.
+To experience "Will You Be My Valentine?", simply visit https://valentine-324s.onrender.com from any modern web browser.
 
 ## How to contribute
 
